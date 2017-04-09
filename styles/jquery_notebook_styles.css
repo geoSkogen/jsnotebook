@@ -43,10 +43,11 @@ span {
 span.bigger {
   font-size: 20px;
   padding: 0;
-} h2, h3, h4 {
+}
+
+h2, h3, h4 {
   text-align: center;
   opacity: 0.7;
-
 }
 
 div.h22 {
@@ -120,6 +121,10 @@ a.closeButton {
 
 a.closeButton:hover {
   color: orangered;
+}
+
+a.titleLink {
+  color: inherit;
 }
 
 div.flexOuterOuter {
