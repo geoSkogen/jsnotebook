@@ -1,0 +1,617 @@
+body {
+  font-family: "Trebuchet MS", tahoma, sans-serif;
+  position: relative;
+}
+
+body, html {
+  height: 100%;
+}
+input {
+  border: none;
+  border-radius: 2px;
+  background-color: lightsteelblue;
+}
+
+input.search {
+  background-color: white;
+  color: black;
+  padding: 0.25em;
+  border: 2px solid lightsteelblue;
+}
+
+input#demo {
+  border: none;
+  border-radius: 2px;
+  background-color: white;
+  padding: 0.25em;
+}
+
+img.imgGo {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+img.photoModalContent {
+  margin: 0 0 0 1% ;
+  border-radius: 2px;
+}
+
+span {
+  padding: 0 0.5em;
+}
+
+span.bigger {
+  font-size: 20px;
+  padding: 0;
+} h2, h3, h4 {
+  text-align: center;
+  opacity: 0.7;
+
+}
+
+div.h22 {
+   background-color: lightgray;
+   width: 100%;
+   display: block;
+   height: 55%;
+   opacity: 1;
+ }
+
+h4 {
+ }
+
+p {
+  margin: 0.25em;
+}
+
+p.text,
+.textHere {
+  background-color: white;
+  color: black;
+  padding: 0.25em 0.55em;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.textHere {
+  padding: 2.5em 0.25em 0 0.25em
+}
+
+
+p.textModal {
+  line-height: 160%;
+}
+
+dl {
+   text-decoration: none;
+   padding: 0 0 0 0;
+   text-align: left;
+ }
+
+
+a:link {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+a:active {
+  text-decoration: none;
+  color:white;
+}
+
+a:visited {
+  text-decoration: none;
+  color:white;
+}
+
+a.closeButton {
+  color: lightsteelblue;
+  text-align: right;
+  font-size: 22px;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
+a.closeButton:hover {
+  color: orangered;
+}
+
+div.flexOuterOuter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+div.flexOuter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+div.flexOuterCenter,
+div.flexOuterCenterR,
+div.transBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.flexOuterCenterR {
+  position: relative;
+}
+
+
+div.flexOuterStart {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex: 3 1 50%;
+  max-width: 65%;
+  margin: 0 0 0 15%;
+}
+
+div.flexOuterEnd {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  flex: 3 1 50%;
+  max-width: 35%;
+  margin: 0 0 0 0;
+}
+
+div.flexOuterColumn {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  flex: 3 1 50%;
+  max-width: 35%;
+}
+
+div#noteColumn {
+  max-width: 60%;
+}
+
+div.flexRight {
+  text-align: right;
+  flex: 1 1 50%;
+  max-width: 25%;
+  line-height: 150%;
+}
+
+
+div.flexLeft {
+  text-align: left;
+  flex: 1 1 50%;
+  max-width: 15%;
+  line-height: 150%;
+}
+
+div.flexInner {
+  text-align: center;
+  flex: 1 1 50%;
+}
+
+div.dd {
+  color: black;
+  opacity: 0.7;
+}
+
+div.dd:hover {
+  background-color: gainsboro;
+}
+
+div.button,
+div.buttonGo,
+div.buttonB,
+div.buttonCollapse,
+div.buttonHere,
+div.buttonHereHead  {
+  padding: 0.5em;
+  margin: 0.25em;
+  background-color: lightsteelblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  min-width: 40%;
+  max-height: 3em;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.buttonGo,
+div.buttonHere,
+div.buttonHereHead {
+  min-width: 4em;
+  max-width: 4em;
+}
+
+div.buttonGo:hover,
+div.buttonHere:hover,
+div.buttonHereHead:hover,
+div.buttonB:hover,
+div.buttonGo:hover {
+  background-color: cornflowerblue;
+
+}
+
+div.buttonHere {
+  padding: 0.4em 0.2em 0.2em 0.2em;
+  margin: 2em 0.25em;
+}
+
+#go {
+  min-width: 1%;
+  max-width: 25%;
+  margin: 0 0 0 12%;
+}
+
+#go:hover {
+  background-color: cornflowerblue;
+}
+
+#clickBelow {
+  background-color: lightsteelblue;
+  color: white;
+  opacity: 1;
+}
+
+div.buttonShpShft {
+  padding: 0.5em;
+  margin: 0.25em;
+  background-color: lightsteelblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  min-width: 19%;
+  max-height: 3em;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.buttonShpShft:hover {
+  background-color: cornflowerblue;
+}
+
+div.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding: 5% 0 0 0;
+  transition: 0.6s;
+}
+
+span.buttonClose {
+  color: cornflowerblue;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+span.buttonClose:hover,
+span.buttonClose:focus {
+  color: orangered;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.block {
+  max-width: 20%;
+  background-color: black;
+  max-height: 20%;
+  position: relative;
+  margin: 6%;
+  padding: 0.5em;
+  color:white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+div.padPoem {
+  padding: 5%;
+  margin: 1% 0 5% 25%;
+}
+
+div.textModal,
+div.photoModal {
+  position: absolute;
+  z-index: 1;
+  margin: 5em;
+  min-width: 40em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.photoModal {
+  margin: 0.75em;
+}
+
+.textModal {
+  padding: 2em;
+}
+
+div.tab,
+div.tabActive {
+  padding: 0.75em;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+
+div.tab {
+  background-color: lightgray;
+}
+
+div.tabActive {
+  background-color: gainsboro;
+}
+
+div.tabDoc,
+div.tabDocShow,
+div.tabDocActive {
+  font-family: arial, sans-serif;
+  padding: 1.5em;
+  color: black;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+div.tabDoc {
+  display: none;
+}
+
+div.tabDocShow {
+  background-color: lightgray;
+}
+
+div.tabDocActive {
+  background-color: gainsboro;
+  display: block;
+}
+
+
+#madridDoc {
+}
+
+div#grey {
+  width:20%;
+  height: 80%;
+  background-color: gainsboro;
+  display: none;
+}
+
+div#blue {
+  width:20%;
+  height: 80%;
+  background-color: cornflowerblue;
+  display: none;
+}
+
+div#lav {
+  width:20%;
+  height: 80%;
+  background-color: indigo;
+  opacity: 0.8;
+  display: none;
+}
+
+div#haze {
+  padding: 0.5em;
+  margin: 0.25em;
+  background-color: lightsteelblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  min-width: 40%;
+  max-height: 3em;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+div#downTitle, #downPanel {
+  margin: 2%;
+  padding: 5%;
+  background-color: lightsteelblue;
+  color: white;
+  font-weight: bold;
+}
+
+#downTitle:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#downPanel {
+  display: none;
+}
+div.downTitle,
+div.downPanel,
+div.downTitleAccord,
+div.downPanelAccord {
+  padding: 1%;
+  margin: 1%;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.downTitle,
+.downPanel {
+  background-color: lightsteelblue;
+  color: white;
+}
+
+.downTitleAccord {
+  background-color: gainsboro;
+  color: black;
+  min-width: 25em;
+  margin: 0 1% 0 1%;
+  opacity: 0.7;
+}
+
+.downTitle:hover {
+  color: black;
+  opacity: 0.65;
+  cursor: pointer;
+}
+.downTitleAccord:hover,
+.downTitleAccord.active {
+  background-color: lightgray;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.downTitleAccord:after {
+  content: '\02795';
+  color: black;
+  float: right;
+  font-size: 10px;
+  padding: 0.75% 2% 0 0;
+ }
+
+.downTitleAccord.active:after {
+  content: '\02796';
+}
+
+.downPanel {
+  display: none;
+  /*transition: 0.6s ease-in-out;*/
+}
+
+.downPanelAccord {
+  background-color: lightgray;
+  color: black;
+  margin: 0 0 0 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  min-width: 25em;
+  opacity: 0;
+}
+
+.downPanelAccord.show {
+  background-color: lightgray;
+  color: black;
+  opacity: 1;
+  max-height: 15em;
+}
+
+#clickBelow:hover {
+  background-color: lightsteelblue;
+}
+
+#shapeShift{
+  max-width: 12em;
+}
+
+.tooltipped {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipped:hover,
+.tooltipText:hover {
+  cursor: pointer;
+}
+
+.tooltipped .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.25em;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltipped .tooltipText::after {
+  content: "";
+  position: absolute:absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltipped:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+div.trans,
+div.trans2,
+div.trans3 {
+  position: absolute;
+  opacity: 0.9;
+  top: 30%;
+  left: 43%;
+}
+
+div.trans2 {
+  opacity: 1;
+}
+div.scrolldown {
+  position: absolute;
+  width: 100%;
+  top: 73%;
+}
+
+div.innerScrolldown {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 18px;
+  background-color: grey;
+  opacity: 0.8;
+}
+
+span.bigger {
+  font-size: 32px;
+}
+
+div.parallax,
+div.parallax2,
+div.parallax3 {
+  position: relative;
+  height: 787px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.parallax {
+  background-image: url("../images/buddha.jpg");
+}
+div.parallax2 {
+  background-image: url("../images/trillium.jpg");
+}
+
+div.parallax3 {
+  background-image: url("../images/mist.jpg");
+  top: 60%;
+}
