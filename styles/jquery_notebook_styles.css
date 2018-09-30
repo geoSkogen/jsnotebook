@@ -604,17 +604,15 @@ div.parallax,
 div.parallax2,
 div.parallax3 {
   position: relative;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 580px;
+  height: 580px;
 }
 
 div.parallax {
   background-image: url("../images/buddha_412.jpg");
-  height: 100%;
-  width: 100%;
 }
 div.parallax2 {
   background-image: url("../images/trillium_412.jpg");
@@ -629,13 +627,11 @@ div.parallax3 {
   div.parallax,
   div.parallax2,
   div.parallax3 {
-    min-height: 320px;
+    height: 320px;
   }
 
   div.parallax {
     background-image: url("../images/buddha_560.jpg");
-    height: 100%;
-    width: 100%;
   }
   div.parallax2 {
     background-image: url("../images/trillium_560.jpg");
@@ -651,12 +647,11 @@ div.parallax3 {
   div.parallax,
   div.parallax2,
   div.parallax3 {
-    min-height: 562px;
+    height: 562px;
   }
 
   div.parallax {
     background-image: url("../images/buddha_1000.jpg");
-    //height: 100%;
 
   }
   div.parallax2 {
@@ -676,7 +671,7 @@ div.parallax3 {
   }
 
   div.parallax {
-    min-height: 720px;
+    height: 100%;;
   }
 }
 
@@ -684,12 +679,12 @@ div.parallax3 {
   div.parallax,
   div.parallax2,
   div.parallax3 {
-    min-height: 787px;
+    height: 787px;
+    background-attachment: fixed;
   }
 
   div.parallax {
     background-image: url("../images/buddha_1400.jpg");
-    height: 100%;
   }
   div.parallax2 {
     background-image: url("../images/trillium_1400.jpg");
