@@ -669,6 +669,11 @@ div.parallax3 {
   div.parallax,
   div.parallax2,
   div.parallax3 {
+    background-attachment: fixed;
+  }
+
+  body, html {
+    height: 100%;
   }
 
   div.parallax {
