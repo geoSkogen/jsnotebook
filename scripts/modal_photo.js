@@ -31,7 +31,12 @@ function initFuncs() {
 }
 
 function photoModalControl(thisModal,thisImg,thisBut,thisClose) {
-  thisImg.setAttribute("src", thisBut.id + "_large.jpg");
-  thisBut.onclick = function () {thisModal.style.display = "block";};
+  thisBut.onclick = function () {
+    var testMedia = window.matchMedia("(min-width: 520px)")
+    var screenType = testMedia.matches ? "tablet" : "mobile"
+    thisImg.setAttribute("src", thisBut.id + "_modal_" + screenType + ".jpg");
+    thisModal.style.display = "block";
+    console.log("opened modal for " + screenType)
+  };
   thisClose.onclick = function () {thisModal.style.display = "none";};
 }

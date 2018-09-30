@@ -335,8 +335,8 @@ div.textModal,
 div.photoModal {
   position: absolute;
   z-index: 1;
-  margin: 5em;
-  min-width: 40em;
+  margin: 1em;;
+  min-width: 90%;
   background-color: black;
   color: white;
   text-align: center;
@@ -347,7 +347,8 @@ div.photoModal {
   margin: 0.75em;
 }
 
-.textModal {
+.textModal,
+.modalText  {
   padding: 2em;
 }
 
