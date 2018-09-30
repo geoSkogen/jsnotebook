@@ -16,7 +16,7 @@ function initTabs() {
   closeMe.onclick = closeNav;
 
   function openNav() {
-    nav.style.width = "27%";
+    nav.style.width = "80%";
   }
 
   function closeNav() {

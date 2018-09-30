@@ -14,5 +14,4 @@ function initClick() {
   function clickLink(elm, url) {
     elm.onclick = function () { location.assign(url); };
   }
-
 }
